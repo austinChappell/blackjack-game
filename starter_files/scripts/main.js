@@ -25,7 +25,7 @@ function aceOptions(num) {
   return optionsArr;
 }
 
-function handValue (hand) {
+function handValue(hand) {
   let subTotal = 0;
   let total = 0;
   let numOfAces = 0;
@@ -47,8 +47,8 @@ function handValue (hand) {
   for (let i = 1; i < aceTotals.length; i++) {
     if (subTotal + aceTotals[i] <= 21) {
       total = subTotal + aceTotals[i];
-    };
-  };
+    }
+  }
 
   return total;
 
